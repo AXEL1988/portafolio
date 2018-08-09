@@ -11,6 +11,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductosService } from './services/productos.service';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    InfoPaginaService
+    InfoPaginaService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
