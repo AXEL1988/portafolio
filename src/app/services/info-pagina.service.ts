@@ -29,9 +29,7 @@ export class InfoPaginaService {
   private cargarEquipo() {
     this.http.get('https://angular-html-9adb3.firebaseio.com/team.json').
     subscribe( ( resp: any[] ) => {
-       this.equipo = resp; 
-       console.log(resp);
-       
+       this.equipo = resp;       
     });
   }
 }
